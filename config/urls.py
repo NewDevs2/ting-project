@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from opendata.views import Main
+
 urlpatterns = [
-    path('polls/', include('polls.urls')),
-    path("admin/", admin.site.urls),
+    path('', Main.as_view()),
+    path('opendata/', include('opendata.urls')),
+    #path('predict/', include('predict.urls')),
+    path('admin/', admin.site.urls),
 ]

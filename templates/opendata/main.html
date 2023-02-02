@@ -1,0 +1,30 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>여기에 Ting Project  만들꺼임 </title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+<h2>여기서 검색 하고, <br> 과거 추세 + 미래 예측 Graph 표시 </h2>
+
+<img class="profile_img" style="width: 30%"
+       src="http://file3.instiz.net/data/cached_img/upload/2021/01/27/18/2ce2f41f7e9f09c0acc77faac7452dbf.jpg" alt="web url 연결 이미지" >
+<br>
+
+<img  style="width: 50%" src="C:/projects/ting-project/templates/images/aptgraph.png"
+      alt="위 웹이미지는 잘 불러옴, 아래 로컬 하드에 있는 이미지를 못 불러옴. 원인 분석중" />
+<img src="{% static 'aptgraph.jpg' %}"/>
+<br>
+
+</body>
+</html>
